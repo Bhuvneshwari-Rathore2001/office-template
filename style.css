@@ -2,6 +2,26 @@ body {
     box-sizing: border-box;
     margin: 0;
     margin-top: 200px;
+
+}
+
+.btn {
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: rgb(4, 4, 62);
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+}
+
+.max_width_container {
+    max-width: 80%;
+}
+
+.border_full {
+    border-bottom: 1px solid rgb(150, 147, 147);
+    width: 100%;
+
 }
 
 #navOuter {
@@ -435,14 +455,6 @@ body {
     color: rgb(4, 4, 62);
 }
 
-#status>div>div>button {
-    font-size: 18px;
-    text-transform: uppercase;
-    background-color: rgb(4, 4, 62);
-    color: white;
-    padding: 8px 12px 8px 12px;
-
-}
 
 
 /* consulting */
@@ -474,23 +486,176 @@ body {
 
 #consult_inner {
     display: flex;
+    gap: 30px;
 }
 
 .consult_image {
-    height: 350px;
+    height: 430px;
     width: 500px;
 }
-.consult_form{
+
+.consult_form {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.consult_form_fields{
+
+.consult_form_fields {
     display: grid;
     gap: 60px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+
+}
+
+.message {
+    text-align: start;
+    height: 100px;
+    margin-bottom: 16px;
+}
+
+.consult_form_fields>input {
+    font-size: 18px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 100%;
+}
+
+/* footer */
+
+#footer {}
+
+.footer_first_part {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(18, 18, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_container {
+    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer_col {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.sub_heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.gray_text {
+    color: rgb(150, 147, 147);
+    font-size: 18px;
+}
+
+.white_text {
+    color: white;
+}
+
+.footer_card {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_card_right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer_card_right_down {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card_image {
+    border-radius: 6px;
+    height: 80px;
+    width: 80px;
+}
+
+.bullet_icon {
+    height: 12px;
+    width: 12px;
+}
+
+.solution_main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.solution_element {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.date {
+    color: rgb(150, 147, 147);
+    font-size: 14px;
+}
+
+.date_icon {
+    height: 14px;
+    width: 14px;
+}
+
+.footer_form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer_form>button {
+    border-radius: 8px;
+    text-transform: uppercase;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 32px 16px 32px;
+
+}
+
+.footer_form>input {
+
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* footer second part */
+
+.footer_second_part {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(4, 4, 62);
+}
+
+.footer_nav {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_nav>div {
+    color: rgb(150, 147, 147);
+    font-size: 18px;
     
 }
-.consult_form_fields>input{
-    width: 100%;
+.footer_second_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
