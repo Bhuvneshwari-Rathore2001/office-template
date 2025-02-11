@@ -1,0 +1,496 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 200px;
+}
+
+#navOuter {
+    display: flex;
+    justify-content: center;
+}
+
+#navOuter>#nav {
+    z-index: 2;
+    position: absolute;
+    top: 160px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-transform: uppercase;
+    max-width: 90%;
+}
+
+#navOuter>#nav>.items>img {
+    height: 15px;
+    width: 15px;
+}
+
+#navOuter>#nav>.items {
+    display: flex;
+    gap: 15px;
+    color: rgb(212, 209, 209);
+}
+
+#navOuter>#nav>.icons {
+    display: flex;
+    gap: 50px;
+}
+
+#navOuter>#nav>.icons>#lasticons {
+    display: flex;
+    gap: 6px;
+
+}
+
+#navOuter>#nav>.icons>#lasticons>img {
+    height: 20px;
+    width: 20px;
+}
+
+#navOuter>#nav>.icons>#social {
+    display: flex;
+    gap: 6px;
+
+}
+
+#navOuter>#nav>.icons>#social>img {
+    height: 20px;
+    width: 20px;
+
+}
+
+#navOuter>#nav>.slash {
+    color: gray;
+}
+
+
+/* banner */
+
+
+#banner>img {
+    position: relative;
+    /* height: 50%; */
+    width: 100%;
+}
+
+#banner>.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    left: 10%;
+    top: 70%;
+    position: absolute;
+}
+
+#banner>.aside>.first {
+    font-size: 30px;
+    color: rgb(151, 149, 149);
+}
+
+#banner>.aside>.second {
+    font-size: 60px;
+    color: rgb(4, 4, 62);
+}
+
+#banner>.aside>button {
+    border: none;
+    width: fit-content;
+    padding: 12px;
+    color: rgb(4, 4, 62);
+}
+
+/* insights */
+
+#insights {
+    display: flex;
+}
+
+#insights>div {
+    padding: 50px;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#insights>.one {
+    background: rgb(227, 224, 224);
+}
+
+#insights>.two {
+    background: rgb(247, 235, 235);
+}
+
+#insights>.three {
+    background: rgb(231, 217, 217);
+}
+
+#insights>.four {
+    background: rgb(227, 224, 224);
+}
+
+#insights>div:hover {
+    border: 2px;
+    border-bottom: rgb(4, 4, 62);
+}
+
+#insights>div>img {
+    height: 100px;
+    width: 100px;
+}
+
+#insights>div>h2 {
+    color: rgb(4, 4, 62);
+}
+
+#insights>div>p {
+    text-align: center;
+    color: rgb(119, 116, 116);
+}
+
+
+/* about */
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#about>img {
+    height: 400px;
+    width: 500px;
+
+}
+
+#about>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    max-width: 50%;
+    text-align: center;
+}
+
+#about>div>h1 {
+    font-size: 40px;
+
+}
+
+
+#about>div>.border {
+    border-bottom: 4px solid rgb(185, 182, 182);
+    width: 40px;
+}
+
+#about>div>p {
+    font-size: 18px;
+
+
+}
+
+#about>div>.paraborder {
+    border-bottom: 1px solid rgb(197, 194, 194);
+    width: 100%;
+}
+
+#about>div>.icons {
+    padding-top: 5px;
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+}
+
+#about>div>.icons>div>img {
+    height: 60px;
+    width: 60px;
+}
+
+#about>div>.icons>div>p {
+    font-size: 20px;
+}
+
+#about>div>.icons>div>.iconborder {
+    border-right: 1px solid rgb(197, 194, 194);
+}
+
+
+/* section */
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#services>.text {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#services>.border {
+    padding-top: 8px;
+    border-bottom: 4px solid rgb(185, 182, 182);
+    width: 40px;
+}
+
+#services>p {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* service cards */
+
+#services>.servicecards {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#services>.servicecards>.card {
+    border: 1px solid rgb(185, 182, 182);
+    display: flex;
+}
+
+#services>.servicecards>.card>img {
+    height: 130px;
+    width: 130px;
+}
+
+#services>.servicecards>.card>div {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#services>.servicecards>.card>div>.text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#services>.servicecards>.card>div>p {
+    font-size: 20px;
+    color: rgb(81, 80, 80);
+}
+
+#services>.servicecards>.card>div>div {
+    display: flex;
+}
+
+#services>.servicecards>.card>div>div>img {
+    height: 20px;
+    width: 20px;
+}
+
+#services>.servicecards>.card>div>div>div {
+    color: rgb(4, 4, 62);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#services>.servicecards>.card>div>div>div {
+    display: flex;
+    gap: 3px;
+
+}
+
+#services>div {
+    text-align: center;
+    font-size: 22px;
+}
+
+#services>div>span {
+    color: rgb(4, 4, 62);
+    text-decoration: underline;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+/* our team */
+
+#team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#team>.text {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#team>.border {
+    padding-top: 8px;
+    border-bottom: 4px solid rgb(185, 182, 182);
+    width: 40px;
+}
+
+#team>p {
+    text-align: center;
+    font-size: 20px;
+}
+
+#team>.teamcards {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+#team>.teamcards>.card {
+    border: 1px solid rgb(185, 182, 182);
+    padding-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+#team>.teamcards>.card>img {
+    height: 250px;
+    width: 250px;
+}
+
+#team>.teamcards>.card>.name {
+    font-size: 20px;
+}
+
+#team>.teamcards>.card>.desing {
+    font-size: 18px;
+    color: rgb(91, 89, 89);
+}
+
+/* company status */
+#section {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+#status>div {
+    position: relative;
+}
+
+#status>div>div>h2 {
+    color: rgb(4, 4, 62);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#status>div>div>p {
+    color: rgb(57, 54, 54);
+    font-size: 30px;
+    text-align: center;
+}
+
+#status>div>img {
+    height: 35em;
+    width: 100%;
+}
+
+#status>div>div {
+    z-index: 10;
+    position: absolute;
+    top: 25%;
+    left: 32%;
+}
+
+#status>div>div>.successcards {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 25px;
+}
+
+#status>div>div>.successcards>.card {
+    display: flex;
+    flex-direction: column;
+}
+
+#status>div>div>.successcards>.card>div>div {
+    font-size: 60px;
+    color: rgb(4, 4, 62);
+}
+
+#status>div>div>button {
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: rgb(4, 4, 62);
+    color: white;
+    padding: 8px 12px 8px 12px;
+
+}
+
+
+/* consulting */
+
+#consult_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.consult_text {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.consult_border {
+    padding-top: 8px;
+    border-bottom: 4px solid rgb(185, 182, 182);
+    width: 40px;
+}
+
+.consult_para {
+    text-align: center;
+    font-size: 20px;
+}
+
+#consult_inner {
+    display: flex;
+}
+
+.consult_image {
+    height: 350px;
+    width: 500px;
+}
+.consult_form{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.consult_form_fields{
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    
+}
+.consult_form_fields>input{
+    width: 100%;
+}
