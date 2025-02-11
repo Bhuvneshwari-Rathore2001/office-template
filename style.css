@@ -460,6 +460,7 @@ body {
 /* consulting */
 
 #consult_container {
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -520,6 +521,8 @@ body {
     border-top: none;
     width: 100%;
 }
+
+
 
 /* footer */
 
@@ -652,10 +655,16 @@ body {
 .footer_nav>div {
     color: rgb(150, 147, 147);
     font-size: 18px;
-    
+
 }
-.footer_second_main{
+
+.footer_second_main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/* slider */
+#slider{
+    background-color: aqua;
 }
